@@ -1,0 +1,299 @@
+/**
+ * CONTENTS
+ *
+ * Box-sizing.
+ * Body background-color.
+ * Navbar.
+ * Address card.
+ * Contact us card.
+ * Footer.
+ *
+ */
+
+
+
+
+
+ /*------------------------------------*\
+   #Box-sizing
+ \*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Body background-color
+\*------------------------------------*/
+body {
+  background-color: #F4F3F5
+}
+
+
+
+
+
+/*------------------------------------*\
+  #Navbar
+\*------------------------------------*/
+
+nav {
+  width:            100vw;
+  height:           8vh;
+  background-color: #6200EA;
+}
+
+  nav img {
+    margin-left: 15vw;
+    margin-top:  1.2vh;
+  }
+
+  .nav__link--wrap {
+    float:        right;
+    margin-right: 15vw;
+  }
+
+  nav a {
+    position:        relative;   /* FIX FOR THE VERTICAL ALIGN OF THE FONT  */
+    bottom:          -2.5vh;
+    margin-left:     5vw;
+    font:            normal normal bold 12px/15px Montserrat;
+    color:           #F4F3F5;
+    opacity:         0.65;
+    text-decoration: none;
+  }
+
+  nav a:active,
+  nav a:visited,
+  nav a:focus {
+      text-decoration: none;
+      padding-bottom:  2.9vh;
+      border-bottom:   3px solid #FFFFFF;
+      color:           #FFFFFF;
+    }
+
+
+
+
+
+/*------------------------------------*\
+  #Address Card
+\*------------------------------------*/
+
+.address {
+  float:            left;
+  margin-left:      15vw;
+  margin-top:       3vh;
+  height:           75vh;
+  width:            33.5vw;
+  background-color: #FFFFFF;
+  border-radius:    15px;
+}
+
+
+  .address img {
+    height:        30vh;
+    width:         27.5vw;
+    margin-top:    5vh;
+    margin-left:   3vw;
+    border-radius: 15px;
+  }
+
+  .address h2 {
+    margin-left:    3vw;
+    margin-top:     2vh;
+    text-align:     left;
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    color:          #6200EA;
+    text-transform: uppercase;
+    opacity:        1;
+  }
+
+  .address__maps {
+    margin-left:    3vw;
+    margin-top:     1vh;
+    text-align:     left;
+    font:           normal normal normal 14px/20px Montserrat;
+    letter-spacing: 0px;
+    color:          #211138;
+    opacity:        1;
+  }
+
+  .address__phone {
+    margin-left:    3vw;
+    margin-top:     2vh;
+    text-align:     left;
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    color:          #6200EA;
+    text-transform: uppercase;
+    opacity:        1;
+  }
+
+  .address__email {
+    margin-left:    3vw;
+    margin-top:     1vh;
+    text-align:     left;
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    color:          #6200EA;
+    text-transform: uppercase;
+    opacity:        1;
+  }
+
+  .address__facebook {
+    margin-left: 3vw;
+    margin-top:  5vh;
+    color:       #6200EA;
+  }
+
+  .address__instagram {
+    margin-left: 1vw;
+    color:       #6200EA;
+  }
+
+  .address__twitter {
+    margin-left: 1vw;
+    color:       #6200EA;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #Contact card
+\*------------------------------------*/
+
+.contact {
+  float:            right;
+  margin-right:     15vw;
+  margin-top:       3vh;
+  height:           75vh;
+  width:            33.5vw;
+  background-color: #FFFFFF;
+  border-radius:    15px;
+}
+
+  .contact h1 {
+    margin-left:    3vw;
+    margin-top:     5vh;
+    text-align:     left;
+    font:           normal normal bold 40px/50px Montserrat;
+    letter-spacing: 0px;
+    color:          #211138;
+    opacity:        1;
+  }
+
+  .contact p {
+    margin-left:    3vw;
+    margin-top:     2vh;
+    margin-right:   3vw;
+    text-align:     left;
+    font:           normal normal normal 20px/30px Montserrat;
+    letter-spacing: 0px;
+    color:          #211138;
+    opacity:        1;
+  }
+
+  input ,
+  input::placeholder ,
+  textarea ,
+  textarea::placeholder {
+    font:           normal normal bold 14px/18px Montserrat;
+    letter-spacing: 0px;
+    color:          #211138;
+    background:     #F4F3F5;
+    margin-left:    3vw;
+    margin-right:   3vw;
+    margin-top:     2vh;
+    border:         none;
+    text-indent:    1vw;
+  }
+
+
+
+  input:focus ,
+  textarea:focus {
+    border-bottom: 3px solid #6200EA;
+  }
+
+  .contact__name ,
+  .contact__name:active ,
+  .contact__name:focus {
+    width:  27.5vw;
+    height: 4vh;
+  }
+
+  .contact__email ,
+  .contact__email:active ,
+  .contact__email:focus {
+    width:  27.5vw;
+    height: 4vh;
+  }
+
+  .contact__message ,
+  .contact__message:active ,
+  .contact__message:focus {
+    width:  27.5vw;
+    height: 20vh;
+  }
+
+  .contact__button {
+    height:         5vh;
+    width:          28vw;
+    margin-top:     3vh;
+    margin-left:    6vh;
+    text-align:     center;
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    color:          #FFFFFF;
+    text-transform: uppercase;
+    opacity:        1;
+    background:     #6200EA;
+    border:         2px solid #6200EA;
+    border-radius:  24px;
+    opacity:        1;
+  }
+
+
+
+
+
+/*------------------------------------*\
+ #Footer
+\*------------------------------------*/
+
+footer {
+  position:         relative;
+  bottom:           -4vh;
+  width:            100vw;
+  height:           10vh;
+  text-align:       center;
+  background-color: #211138;
+}
+
+  .footer__wrapper {
+    display:        table-cell;
+    vertical-align: middle;
+  }
+
+  footer p {
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    opacity:        1;
+    color:          #FFFFFF;
+  }
+
+  footer strong {
+    font:           normal normal bold 12px/15px Montserrat;
+    letter-spacing: 2.4px;
+    color:          #6200EA;
+    text-transform: uppercase;
+  }
